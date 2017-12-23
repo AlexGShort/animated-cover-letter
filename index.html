@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="ms-cover.css">
+  <title>Dynamic Cover Letter</title>
+
+</head>
+<body onload="init();">
+  <div class="container">
+
+    <div class="row">
+      <header class="col-12 hidden initial-header">
+        <ul class="nav">
+          <li class="nav-item mr-1 xp-3">
+            <a class="nav-link" href="http://www.alexgshort.com">Alex's Website</a>
+          </li>
+          <li class="nav-item mr-1 xp-3">
+            <a class="nav-link" href="http://linkedin.com/in/alexander-short-7a00ba12a/">LinkedIn Profile</a>
+          </li>
+          <li class="nav-item xp-3">
+            <a class="nav-link" href="https://github.com/AlexGShort">Github Repository</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="row">
+      <div id="left-sidebar" class="col-2 hidden initial-left-sidebar">
+        <div class="tree">
+          <img src="assets/images/tree_01.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_02.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_03.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_04.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_05.png" alt="">
+        </div> <!-- end #left-sidebar -->
+      </div> <!-- end .row -->
+
+      <div id="cover-text" class="col-8 cover-text-white">
+        <section class="d-flex flex-column">
+          <div id="return-address" class="ml-auto cover">
+              Alexander Short</br>
+              1915 16th Street, NW #704 </br>
+              Washington, DC 20009</br>
+              (202) 309-2581
+          </div>
+          <div id="company-address">
+            Company</br>
+            Company Address</br>
+            Company Address 2</br>
+            Washington, DC 20002
+          </div>
+          <div id="cover-body">
+            <div id="greeting-block">
+              <span id="greeting">To whom it may concern:</span>
+              <!-- logo -->
+              <div id="animation_container" class="hidden" style="background-color:rgba(255, 255, 255, 0.00); width:40px; height:77px">
+                <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:40px; height:77px; position: absolute; left: 0px; top: 0px; display: block;">
+                </div>
+              </div>
+              <!-- end logo -->
+            </div> <!-- end #greeting-block -->
+            <div>
+              <p>Thank you for reviewing my application for the position of Junior Front-End Developer.</p>
+              <p>I am a full-stack web developer taking my 15+ years of computer-related support in a new direction.  During my time as an IT Specialist, I had the opportunity to work on several web development projects for both internal and external clients using Drupal, Wordpress, and sometimes just <span class="html">HTML</span>, <span class="css">CSS</span> and programming.  I have also worked on video and graphics projects using Adobe Premiere Pro, After Effects and Audition for video, and <span class="adobe">Photoshop</span> and <span class="adobe">Illustrator</span> for graphics.  I recently enhanced my web development skills by attending coding bootcamp where I learned the Python, <span class="javascript">Javascript</span> and Ruby programming languages along with their associated web platforms: Django, Flask, Angular and Rails.  Lately I've been working on my <span class="animation">animation</span> skills with <span class="css">CSS</span>, Jquery, D3 and Adobe <span class="adobe">Animate</span>.</p>
+
+              <p>My time working in IT support has given me a broad knowledge of networking and hardware as well as experience solving client problems in a personalized, effective manner.  I am versatile and quick-to-learn and eager to use my knowledge and skills to support Marstudio's work.  If you would like to know more about me and what I can provide your team, please give me a call or send me an email.</p>
+            </div>
+            <div id="signature">
+              <p>Sincerely,</p>
+              <p>Alexander G. Short</p>
+            </div>
+          </div> <!-- end #cover-body -->
+        </section>
+      </div>
+      <div id="right-sidebar" class="col-2 hidden initial-right-sidebar">
+        <div class="tree">
+          <img src="assets/images/tree_01.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_02.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_03.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_04.png" alt="">
+        </div>
+        <div class="tree">
+          <img src="assets/images/tree_05.png" alt="">
+        </div>
+      </div> <!-- end #right-sidebar -->
+    </div> <!-- end .row -->
+
+    <div class="row">
+      <footer class="col-12 hidden initial-footer">
+        <div class="image hidden">
+          <img src="assets/images/top.jpeg" alt="picture of a top">
+        </div>
+      </footer>
+    </div> <!-- end .row -->
+  <div> <!-- end .content -->
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="ms-cover.js"></script>
+
+<!-- code for logo animation -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="assets/logo/marstudio.js?1510493724443"></script>
+</html>

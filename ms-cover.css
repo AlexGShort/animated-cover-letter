@@ -1,0 +1,205 @@
+
+/* utilities */
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+/* structure */
+
+.css-body {
+  background-color: #2e013b;
+  transition: background-color 2s;
+}
+
+.initial-header {
+  transform: translate( 0, 120px) scale( 0.7, 0.7 );
+}
+
+.initial-left-sidebar {
+  transform: translate( 260px, 0 );
+}
+
+.initial-right-sidebar {
+  transform: translate( -260px, 0 );
+}
+
+.initial-footer {
+  transform: translate( 0, -120px );
+}
+
+header, footer {
+  height: 80px;
+  background-color: #a38f49;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #261300;
+  border-radius: 10px;
+  opacity: 1;
+  transform: translate( 0, 0 ) scale( 1, 1 );
+  transition: opacity 2s, transform 1s linear;
+}
+
+footer .image {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 2s;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+.container {
+  margin-top: 30px;
+  background-size: 10% 10%;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-item {
+  background-color: #d4c387;
+  background-image: url('assets/SVG/leaf.svg');
+  background-repeat: no-repeat;
+  background-size: 9%;
+  background-position: 5px 10px;
+  border: 2px solid #472400;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding-left: 10px;
+  transition: filter 0.5s;
+}
+
+.nav-item:hover {
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.5));
+  transition: filter 0.5s;
+}
+
+.nav-link {
+  color: #261300;
+}
+
+.nav-link:hover {
+  color: #261300;
+  text-shadow: 0px 0px 5px #f7931e;
+}
+
+#cover-text div {
+  padding: 10px 5px;
+  line-height: 110%;
+}
+
+#cover-text #company-address {
+  padding-bottom: 0px;
+}
+
+#cover-text #greeting-block {
+  padding-top: 0px;
+}
+
+.cover-text-white {
+  background-color: white;
+}
+
+#animation_container {
+  display: inline-block;
+  transition: opacity 2s;
+}
+
+.css-cover {
+  background-color: #fff5d0;
+  border: 2px solid #472400;
+  border-radius: 10px;
+  z-index: 10;
+  transition: background-color 2s, border 2s;
+}
+
+#left-sidebar, #right-sidebar {
+  background-color: #d4c387;
+  border: 2px solid #472400;
+  border-radius: 10px;
+  padding: 4px;
+  transition: opacity 2s, transform 1s;
+}
+
+.tree {
+  transform: rotateX(88deg);
+  height: 1%;
+  border: 1px solid rgba( 0, 0, 0, 1);
+  border-radius: 5px;
+}
+
+.expand {
+  transform: rotateX(0deg);
+  border: 0px solid rgba( 0, 0, 0, 0);
+  height: 20%;
+  transition: height 4s, transform 4s 1s, border 4s 5s;
+}
+
+.expand img {
+  filter: drop-shadow(12px 12px 5px rgba(0,0,0,0.5));
+  transition: filter 3s 5s;
+
+}
+
+.tree img {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes falling {
+  0% { transform: translate(0px,0px) rotate(0deg); opacity: 1 }
+  20% { transform: translate(0px, 200px) rotate(-45deg); opacity: 1 }
+  50% { transform: translate(0px, 400px) rotate(0deg); opacity: 1 }
+  90% { transform: translate(0px, 600px) rotate(20deg);opacity: 1 }
+  100% { transform: translate(0px,600px) rotate(20deg);opacity: 0 }
+}
+
+.svg-leaf {
+  /*fill: #f7931e;*/
+  stroke: #42210b;
+  stroke-miterlimit: 10;
+  stroke-width: 0.75px;
+}
+
+svg.leaf {
+  filter: drop-shadow(8px 8px 5px rgba(0,0,0,0.5));
+  position: relative;
+  top: 100px;
+  left: 20px;
+  animation-name: falling;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes burst {
+  0% { text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff, 0px 0px 0px #fff}
+  10% { text-shadow: 2px 2px 2px #00f, -2px 2px 2px #0f0, 2px -2px 2px #f00, -2px -2px 2px #ff0}
+  30% { text-shadow: 4px 4px 4px #00f, -4px 4px 4px #0f0, 4px -4px 4px #f00, -4px -4px 4px #ff0}
+  60% { text-shadow: 6px 6px 6px #00f, -6px 6px 6px #0f0, 6px -6px 6px #f00, -6px -6px 6px #ff0}
+  100% { text-shadow: 8px 8px 8px #fff, -8px 8px 8px #fff, 8px -8px 8px #fff, -8px -8px 8px #fff}
+}
+
+.burst {
+  animation-name: burst;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
